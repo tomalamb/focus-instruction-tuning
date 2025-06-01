@@ -17,6 +17,11 @@ body {
   font-variant: small-caps;
 }
 
+.responsive-image {
+    width: 100%;
+    max-width: 400px; /* limits max size */
+    height: auto;
+}
 
 .teaser .hero-body {
   padding-top: 0;
