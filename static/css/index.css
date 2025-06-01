@@ -36,6 +36,15 @@ body {
 
 }
 
+.hf-icon {
+  background-image: url('../images/hf_icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 .publication-banner video {
   position: relative;
   left: auto;
