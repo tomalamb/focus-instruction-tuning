@@ -115,16 +115,35 @@
   </div>
 </section>
 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
 <!-- Motivation Image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <figure class="image">
-        <img src="static/images/motivation.png" alt="Teaser Image">
+      <figure class="image is-3by2">
+        <img
+          src="static/images/motivation.png"
+          alt="Teaser Image"
+          style="max-width: 90%; height: auto;"
+        >
       </figure>
-      <h2 class="subtitle has-text-centered"></h2>
-        <strong>Focus Instruction Tuning (FIT).</strong> In the example above, a model that is solely Instruction Tuned may reflect biases from the training data. For instance, in a question from BBQ (Parrish et al., 2022), when asked who posed a technical question at an engineering candidate’s interview involving both a man and a woman, the model might incorrectly answer “the man” due to biases, despite evidence to the contrary. In contrast, a FIT model can ignore the gender feature and focus on the interview content, demonstrating steerability and adaptability at inference time.
-      </h2>
+      <strong>Focus Instruction Tuning (FIT).</strong> In the example above...
     </div>
   </div>
 </section>
@@ -151,25 +170,6 @@ Our findings show that FIT makes language models more flexible and dependable. I
 </section>
 <!-- End Lay Summary  -->
 
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -177,30 +177,30 @@ Our findings show that FIT makes language models more flexible and dependable. I
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/focus_labels.png" alt="MY ALT TEXT"/>
+        <img src="static/images/focus_labels.png" alt="MY ALT TEXT" style="max-width: 90%; height: auto;"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+    
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/SMNLI_dgp.png" alt="MY ALT TEXT"/>
+        <img src="static/images/SMNLI_dgp.png" alt="MY ALT TEXT" style="max-width: 90%; height: auto;"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+       
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/smnli_results.png" alt="MY ALT TEXT"/>
+        <img src="static/images/smnli_results.png" alt="MY ALT TEXT" style="max-width: 90%; height: auto;"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+   
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/bbq_results.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+
       </h2>
     </div>
   </div>
