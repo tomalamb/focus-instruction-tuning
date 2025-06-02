@@ -18,9 +18,11 @@ body {
 }
 
 .responsive-image {
-    width: 100%;
-    max-width: 400px; /* limits max size */
-    height: auto;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px; /* limits max size */
+  height: auto;
 }
 
 .teaser .hero-body {
