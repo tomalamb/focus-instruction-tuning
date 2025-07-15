@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Focus On This, Not That! Steering LLMs With Adaptive Feature Specification</title>
+  <title>Focus Instruction Tuning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Focus On This, Not That! Steering LLMs With Adaptive Feature Specification</h1>
+            <h1 class="title is-1 publication-title"><span style="color: #DB4F5F; font-weight: 600;">Focus On This, Not That!</span><br/> Steering LLMs With Adaptive Feature Specification</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -74,9 +74,10 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2410.22944.pdf" target="_blank"
+                    
+                    <!-- OpenReview PDF link -->
+                    <span class="link-block">
+                      <a href="https://openreview.net/forum?id=rbI5mOUA8Z" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -85,28 +86,49 @@
                       </a>
                     </span>
 
+                    <!-- poster link -->
+                    <span class="link-block">
+                      <a href="https://icml.cc/media/PosterPDFs/ICML%202025/43885.png?t=1751877012.2165263" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-image"></i>
+                        </span>
+                        <span>Poster</span>
+                      </a>
+                    </span>
+
+                    <!-- slides link -->
+                    <span class="link-block">
+                      <a href="https://icml.cc/media/icml-2025/Slides/43885_EqRdfAz.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-powerpoint"></i>
+                        </span>
+                        <span>Slides</span>
+                      </a>
+                    </span>
                     
                     <!-- Github link -->
                     <span class="link-block">
                       <a href="https://github.com/tomalamb/fit" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Code</span>
-                    </a>
-                  </span>
-
-                  <!-- Hugging face dataset -->
-                <span class="link-block">
-                  <a href="https://huggingface.co/tomalamb" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      🤗
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
                     </span>
-                    <span>Datasets</span>
-                  </a>
-                </span>
+
+                    <!-- Hugging face dataset -->
+                    <span class="link-block">
+                      <a href="https://huggingface.co/tomalamb" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          🤗
+                        </span>
+                        <span>Datasets</span>
+                      </a>
+                    </span>
 
             </div>
           </div>
@@ -124,7 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.
+            Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce <b>Focus Instruction Tuning (FIT)</b>, which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.
           </p>
         </div>
       </div>
@@ -236,11 +258,13 @@ Our findings show that FIT makes language models more flexible and dependable. I
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{lamb2024focus,
-  title={Focus On This, Not That! Steering LLMs With Adaptive Feature Specification},
-  author={Lamb, Tom A and Davies, Adam and Paren, Alasdair and Torr, Philip HS and Pinto, Francesco},
-  journal={arXiv preprint arXiv:2410.22944},
-  year={2024}
+      <pre><code>@inproceedings{
+  lamb2025focus,
+  title={Focus On This, Not That! Steering {LLM}s with Adaptive Feature Specification},
+  author={Tom A. Lamb and Adam Davies and Alasdair Paren and Philip Torr and Francesco Pinto},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=rbI5mOUA8Z}
 }</code></pre>
     </div>
 </section>
